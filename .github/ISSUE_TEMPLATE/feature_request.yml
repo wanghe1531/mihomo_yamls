@@ -1,0 +1,21 @@
+name: 💡 Feature Request / 功能或改进建议
+description: Suggest an improvement for this repository. / 对本仓库的结构、文档或工作流提出改进建议。
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement / 问题陈述
+      description: Is your feature request related to a problem? / 你的建议是否为了解决某个痛点？
+      placeholder: I'm frustrated when... / 我觉得目前的...不太好用
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / 期望的解决方案
+      description: Describe what you want to happen. / 描述你希望如何改进。
+    validations:
+      required: true
