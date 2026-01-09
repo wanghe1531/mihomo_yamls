@@ -140,7 +140,10 @@
 | **路由器** | **OpenClash** | 🟢 | (OpenWrt) 功能最全，设置极其丰富。 | 启动慢，界面臃肿，吃 CPU 性能。 | [Github](https://github.com/vernesong/OpenClash) |
 | **路由器** | **Nikki** | 🟢 | (OpenWrt) 轻量化，启动快，依赖 nftables。 | 原 MihomoTProxy，适合现代 OpenWrt。 | [Github](https://github.com/nikkinikki-org/OpenWrt-nikki) |
 | **路由器** | ShellCrash | 🟢 | (小米/SSH) 性能强，通过 SSH 管理。 | 无 Web UI (或仅有简单面板)。 | [Github](https://github.com/juewuy/ShellCrash) |
-| **路由器** | MerlinClash2 | 🟢 | (华硕) 梅林固件首选，精简重构。 | 不支持老旧 CPU 型号。 | [Website](https://mclash.cn/) |
+|  |  |  |  |  |  |
+| **华硕路由器** | MerlinClash/MerlinClash2 | 🟢 | (华硕) 梅林固件首选，精简重构。 | 不支持老旧 CPU 型号。 | [Telegram](https://t.me/merlinclashcat) |
+| **华硕路由器** | MerlinClashlite | 🟢 | (华硕) 梅林固件首选，精简重构。 | 不支持老旧 CPU 型号。 | [TELEGRAM](https://t.me/MerlinClashLite) |
+| **华硕路由器** | fancyss | 🟢 | (华硕) 梅林固件首选，精简重构。 | 不支持老旧 CPU 型号。 | [github](https://github.com/hq450/fancyss) |
 |  |  |  |  |  |  |
 | **NAS（docker）** | easy-mihomo | 🟢 | fnos的首选。 | 新星软件依赖docker | [TELEGRAM](https://github.com/wlaosj/easy-mihomo) |
 
