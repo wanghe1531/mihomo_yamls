@@ -125,7 +125,7 @@
 | **Android** | **FlClash** | 🟢 | 仿 Surfboard 界面，全协议，更省电。 | 覆写选项比 CMFA 略少。 | [Github](https://github.com/chen08209/FlClash/releases) |
 | **Android** | **Clash Meta (CMFA)** | 🟢 | 官方分支，设置选项最全，兼容性最好。 | UI 交互逻辑一般，已停止大版本更新(但仍好用)。 | [Github](https://github.com/MetaCubeX/ClashMetaForAndroid/releases) |
 | **Android** | Clash Mi | 🟡 | KaringX 作者新作，全协议支持。 | 新项目，处于早期阶段。 | [Github](https://github.com/KaringX/clashmi) |
-| **Android** | YumeBox | 🟡 | UI 美观，集成 Sub-Store 和 Smart 策略组。 | 策略组切换操作较繁琐。 | [Github](https://github.com/Dreamacro/clash/issues) |
+| **Android** | YumeBox | 🟡 | UI 美观，集成 Sub-Store 和 Smart 策略组。 | 策略组切换操作较繁琐。 | [Github](https://github.com/YumeLira/YumeBox) |
 | **HarmonyOS** | **ClashBox** | 🟢 | (原 ClashNEXT) 基于安卓端 FlClash 二次开发。 | 需切换海外 App 商店下载，适配纯血鸿蒙。 | [Github](https://github.com/xiaobaigroup/ClashBox) |
 |  |  |  |  |  |  |
 | **Magisk/KSU** | **Surfing** | 🟠 | (Root) 模块化透明代理，集成配置，开箱即用。 | 需 Magisk/KernelSU 环境，无独立 App 界面。 | [Github](https://github.com/GitMetaio/Surfing) |
@@ -141,6 +141,7 @@
 | **路由器** | **Nikki** | 🟢 | (OpenWrt) 轻量化，启动快，依赖 nftables。 | 原 MihomoTProxy，适合现代 OpenWrt。 | [Github](https://github.com/nikkinikki-org/OpenWrt-nikki) |
 | **路由器** | ShellCrash | 🟢 | (小米/SSH) 性能强，通过 SSH 管理。 | 无 Web UI (或仅有简单面板)。 | [Github](https://github.com/juewuy/ShellCrash) |
 | **路由器** | MerlinClash2 | 🟢 | (华硕) 梅林固件首选，精简重构。 | 不支持老旧 CPU 型号。 | [Website](https://mclash.cn/) |
+|  |  |  |  |  |  |
 | **NAS（docker）** | easy-mihomo | 🟢 | fnos的首选。 | 新星软件依赖docker | [TELEGRAM](https://github.com/wlaosj/easy-mihomo) |
 
 ---
