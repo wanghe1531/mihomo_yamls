@@ -67,7 +67,7 @@
             </ul>
         </td>
          <td width="33%" align="center">
-            <h3>致谢与来源</h3>
+            <h3>常见规则集来源</h3>
             <p>感谢上游开源项目的贡献</p>
             <a href="./RULESETSOURCE_README.md">
                 <img src="https://img.shields.io/badge/点击查看-Credits-pink?style=for-the-badge&logo=github" alt="Credits">
