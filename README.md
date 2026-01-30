@@ -103,3 +103,6 @@
 **如果这个项目对您有帮助，请点亮右上角的 ⭐ Star 支持一下！**
 
 </div>
+<!-- AUTO_GENERATED_START -->
+<!-- 这里会自动插入配置列表 -->
+<!-- AUTO_GENERATED_END -->
