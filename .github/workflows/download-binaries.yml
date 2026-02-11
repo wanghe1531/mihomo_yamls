@@ -1,0 +1,122 @@
+name: Reusable - Download Binaries
+
+on:
+  workflow_call:
+    inputs:
+      project:
+        description: '项目名称 (mihomo)'
+        required: true
+        type: string
+      variant:
+        description: '变体标识 (meta | alpha | smart)'
+        required: true
+        type: string
+      version:
+        description: '版本号'
+        required: true
+        type: string
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          # Linux平台
+          - { platform: linux, arch: amd64-v1 }
+          - { platform: linux, arch: amd64-v3 }
+          - { platform: linux, arch: armv5 }
+          - { platform: linux, arch: armv6 }
+          - { platform: linux, arch: armv7 }
+          - { platform: linux, arch: arm64 }
+          - { platform: linux, arch: mips-softfloat }
+          - { platform: linux, arch: mipsle-softfloat }
+          - { platform: linux, arch: mipsle-hardfloat }
+          # Windows平台
+          - { platform: windows, arch: amd64-v1 }
+          - { platform: windows, arch: amd64-v3 }
+          - { platform: windows, arch: arm64 }
+          # macOS平台
+          - { platform: darwin, arch: amd64 }
+          - { platform: darwin, arch: arm64 }
+          # Android平台
+          - { platform: android, arch: arm64 }
+          - { platform: android, arch: armv7 }
+          - { platform: android, arch: amd64 }
+      fail-fast: false
+    
+    steps:
+      - name: Checkout主仓库（获取处理脚本）
+        uses: actions/checkout@v4
+
+      - name: 下载并处理
+        run: |
+          mkdir -p ./artifacts ./tmp
+          
+          # 设置下载URL和文件名模式
+          case "${{ inputs.variant }}" in
+            meta)
+              BASE_URL="https://github.com/MetaCubeX/mihomo/releases/download/${{ inputs.version }}"
+              ;;
+            alpha)
+              BASE_URL="https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha"
+              ;;
+            smart)
+              BASE_URL="https://github.com/vernesong/mihomo/releases/download/${{ inputs.version }}"
+              ;;
+            *)
+              echo "未知变体: ${{ inputs.variant }}"
+              exit 1
+              ;;
+          esac
+          
+          # mihomo 的发布文件名格式: mihomo-platform-arch-version
+          FILE_PREFIX="mihomo-${{ matrix.platform }}-${{ matrix.arch }}"
+          
+          if [[ "${{ matrix.platform }}" == "linux" ]]; then
+            URL="${BASE_URL}/${FILE_PREFIX}-${{ inputs.version }}.gz"
+            echo "下载: $URL"
+            curl -fSL --max-time 300 "$URL" | gunzip -c > ./tmp/mihomo
+            chmod +x ./tmp/mihomo
+            SOURCE_FILE="./tmp/mihomo"
+          elif [[ "${{ matrix.platform }}" == "windows" ]]; then
+            URL="${BASE_URL}/${FILE_PREFIX}-${{ inputs.version }}.zip"
+            echo "下载: $URL"
+            curl -fSL --max-time 300 -o ./tmp/download.zip "$URL"
+            unzip -q ./tmp/download.zip -d ./tmp/
+            SOURCE_FILE=$(find ./tmp -name "*.exe" | head -n1)
+            if [[ -z "$SOURCE_FILE" ]]; then
+              echo "错误: 找不到exe文件"
+              exit 1
+            fi
+          elif [[ "${{ matrix.platform }}" == "darwin" ]]; then
+            # macOS 通常是 gz 格式
+            URL="${BASE_URL}/${FILE_PREFIX}-${{ inputs.version }}.gz"
+            echo "下载: $URL"
+            curl -fSL --max-time 300 "$URL" | gunzip -c > ./tmp/mihomo
+            chmod +x ./tmp/mihomo
+            SOURCE_FILE="./tmp/mihomo"
+          elif [[ "${{ matrix.platform }}" == "android" ]]; then
+            # Android 通常是 gz 格式
+            URL="${BASE_URL}/${FILE_PREFIX}-${{ inputs.version }}.gz"
+            echo "下载: $URL"
+            curl -fSL --max-time 300 "$URL" | gunzip -c > ./tmp/mihomo
+            chmod +x ./tmp/mihomo
+            SOURCE_FILE="./tmp/mihomo"
+          fi
+          
+          # 调用处理脚本
+          bash .github/scripts/lib/artifact-handler.sh \
+            "$SOURCE_FILE" \
+            "${{ inputs.project }}" \
+            "${{ inputs.variant }}" \
+            "${{ matrix.platform }}" \
+            "${{ matrix.arch }}" \
+            "./artifacts"
+
+      - name: 上传产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.project }}-${{ inputs.variant }}-${{ matrix.platform }}-${{ matrix.arch }}
+          path: ./artifacts/*
+          retention-days: 1
