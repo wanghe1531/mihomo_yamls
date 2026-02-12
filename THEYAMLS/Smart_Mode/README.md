@@ -2,19 +2,19 @@
 
 [🔙 返回主页](../../README.md)
 
-> 🤖 自动技术分析 | 11 个配置文件
+> 🤖 自动技术分析 | 12 个配置文件
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `OneSmart_Lite_Config.yaml` | `OneSmart_Config.yaml` | `clash-fallback-smart-std.yaml` | `clash-all-smart.yaml` | `clash-all-fallback-smart.yaml` | `MihomoSmartProMax.yaml` | `MihomoSmartProPlus.yaml` | `MihomoSmartAIO.yaml` | `THESmart.yaml` | `mihomo_smart.yaml` | `smart.yaml` |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 12.5 KB | 20.1 KB | 17.7 KB | 15.1 KB | 18.2 KB | 25.1 KB | 25.7 KB | 32.1 KB | 24.9 KB | 15.0 KB | 13.0 KB |
-| **混合端口** | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 0 | 7890 |
-| **面板地址** | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | - | - |
-| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
-| **TUN** | 🚫 | 🚫 | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ |
-| **策略组** | **16** | **31** | **36** | **38** | **57** | **41** | **41** | **69** | **40** | **19** | **28** |
-| **规则数** | **21** | **36** | **42** | **43** | **48** | **45** | **44** | **52** | **43** | **29** | **23** |
+| 特性 | `OneSmart_Lite_Config.yaml` | `OneSmart_Config.yaml` | `clash-fallback-smart-std.yaml` | `clash-all-smart.yaml` | `clash-all-fallback-smart.yaml` | `OneSmartProMCX.yaml` | `MihomoSmartProMax.yaml` | `MihomoSmartProPlus.yaml` | `MihomoSmartAIO.yaml` | `THESmart.yaml` | `mihomo_smart.yaml` | `smart.yaml` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **大小** | 12.5 KB | 20.1 KB | 17.7 KB | 15.1 KB | 18.2 KB | 41.4 KB | 25.1 KB | 25.7 KB | 32.1 KB | 24.9 KB | 15.0 KB | 13.0 KB |
+| **混合端口** | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 0 | 7890 |
+| **面板地址** | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | - | - |
+| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
+| **TUN** | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ |
+| **策略组** | **16** | **31** | **36** | **38** | **57** | **32** | **41** | **41** | **69** | **40** | **19** | **28** |
+| **规则数** | **21** | **36** | **42** | **43** | **48** | **110** | **45** | **44** | **52** | **43** | **29** | **23** |
 
 ## 📄 配置详情
 
@@ -234,6 +234,40 @@
 | 👆 日本&#124;SMART | `smart` |
 | 👆 美国&#124;SMART | `smart` |
 | 👆 GLOBAL | `select` |
+</details>
+
+---
+### 👤 edison
+
+#### 📝 OneSmartProMCX.yaml
+- **路径**: `edison/OneSmartProMCX.yaml` | **大小**: 41.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/edison/OneSmartProMCX.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (32个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 Proxy | `select` |
+| 👆 AI | `select` |
+| 👆 ProxyGame | `select` |
+| 👆 Streaming | `select` |
+| 👆 Google | `select` |
+| 👆 Microsoft | `select` |
+| 👆 TikTok | `select` |
+| 👆 Crypto | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 Emby | `select` |
+| 👆 Tracker | `select` |
+| 👆 Apple | `select` |
+| 👆 国内直连 | `select` |
+| ⚖️ 中转服务 | `load-balance` |
+| 🔧 香港-故转 | `fallback` |
+| 🔧 日本-故转 | `fallback` |
+| 🔧 狮城-故转 | `fallback` |
+| 🔧 美国-故转 | `fallback` |
+| 👆 香港-手选 | `select` |
+| 👆 日本-手选 | `select` |
+| ... | 还有 12 个 |
 </details>
 
 ---
