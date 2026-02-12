@@ -168,46 +168,7 @@ jobs:
       smart_time: ${{ steps.versions.outputs.smart_time }}
       smart_skip: ${{ steps.versions.outputs.smart_skip }}
     
-    steps:
-      - name: 检测所有版本
-        id: versions
-        run: |
-          # Meta - 获取最新正式版
-          META_API=$(curl -sSL httpsnd_dev_skip=false" >> $GITHUB_OUTPUT
-            echo "sagernet_release_skip=false" >> $GITHUB_OUTPUT
-            echo "sagernet_dev_skip=false" >> $GITHUB_OUTPUT
-          else
-            # 简化逻辑：只要不是unknown就不跳过
-            [[ "${{ steps.versions.outputs.ref1nd_main_version }}" != "unknown" ]] && echo "ref1nd_main_skip=false" || echo "ref1nd_main_skip=true"
-            [[ "${{ steps.versions.outputs.ref1nd_dev_version }}" != "unknown" ]] && echo "ref1nd_dev_skip=false" || echo "ref1nd_dev_skip=true"
-            [[ "${{ steps.versions.outputs.sagernet_release_version }}" != "null" ]] && echo "sagernet_release_skip=false" || echo "sagernet_release_skip=true"
-            [[ "${{ steps.versions.outputs.sagernet_dev_version }}" != "null" ]] && echo "sagernet_dev_skip=false" || echo "sagernet_dev_skip=true"
-          fi
 
-  # ========================================================================
-  # mihomo版本检测
-  # ========================================================================
-  check-mihomo:
-    name: 检测mihomo版本
-    runs-on: ubuntu-latest
-    if: |
-      github.event.inputs.projects == 'all' || 
-      github.event.inputs.projects == 'mihomo' || 
-      github.event_name != 'workflow_dispatch'
-    
-    outputs:
-      meta_version: ${{ steps.versions.outputs.meta_version }}
-      meta_time: ${{ steps.versions.outputs.meta_time }}
-      meta_skip: ${{ steps.versions.outputs.meta_skip }}
-      
-      alpha_version: ${{ steps.versions.outputs.alpha_version }}
-      alpha_time: ${{ steps.versions.outputs.alpha_time }}
-      alpha_skip: ${{ steps.versions.outputs.alpha_skip }}
-      
-      smart_version: ${{ steps.versions.outputs.smart_version }}
-      smart_time: ${{ steps.versions.outputs.smart_time }}
-      smart_skip: ${{ steps.versions.outputs.smart_skip }}
-    
     steps:
       - name: 检测所有版本
         id: versions
