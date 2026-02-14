@@ -38,13 +38,12 @@ jobs:
       # --- 步骤 1: 安装必要工具 ---
       - name: Setup Go and Tools
         run: |
-          echo "🛠️ Installing v2fly tools..."
-          go install -v github.com/v2fly/geoip/geoip@latest
-          go install -v github.com/v2fly/domain-list-community/domain-list-community@latest
+          echo "🛠️ Installing v2dat (Unpack tool)..."
+          # 安装 v2dat，专门用于解包 geoip/geosite
+          go install github.com/urlesistiana/v2dat@latest
           
-          # 将 GOPATH/bin 加入路径，并重命名 domain-list-community 方便调用
+          # 将 Go Bin 加入路径
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
-          sudo ln -s $(go env GOPATH)/bin/domain-list-community /usr/local/bin/geosite
 
       - name: Setup Python
         uses: actions/setup-python@v5
