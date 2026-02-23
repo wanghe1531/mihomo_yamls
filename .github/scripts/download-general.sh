@@ -37,6 +37,9 @@ https://raw.githubusercontent.com/Repcz/Tool/refs/heads/X/mihomo/Client/config.y
 https://raw.githubusercontent.com/Repcz/Tool/refs/heads/X/mihomo/Client/Lite/config.yaml|THEYAMLS/General_Config/Repcz/config_lite.yaml
 https://gist.github.com/SHICHUNHUI88/099059cfce913ef7b80496fbf4241324/raw/us_la.yaml|THEYAMLS/General_Config/SHICHUNHUI88/us_la.yaml
 https://gist.github.com/SHICHUNHUI88/b8e2ee8ca31a91f3dbc130e4e35e9996/raw/Clash-Airport.yaml|THEYAMLS/General_Config/SHICHUNHUI88/Clash-Airport.yaml
+https://raw.githubusercontent.com/lvbibir/clash/refs/heads/master/mihomo.yaml|THEYAMLS/General_Config/lvbibir/mihomo.yaml
+https://raw.githubusercontent.com/Seven1echo/Yaml/refs/heads/main/Seven1_fallback_Geo.yaml|THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Geo.yaml
+https://raw.githubusercontent.com/Seven1echo/Yaml/refs/heads/main/Seven1_fallback_Rule-Set.yaml|THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Rule-Set.yaml
 EOF
 )
 
