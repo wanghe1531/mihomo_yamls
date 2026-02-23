@@ -1,6 +1,6 @@
 # 1先下载编辑器，苹果用Textastic Code编辑，电脑用VS Code编辑，安卓用Acode编辑
 # 2把我的配置全部复制到编辑器里面，把下面第8行,机场链接 url："这里的机场链接换成自己的机场链接"
-# 3然后保存“名称.yaml”文件格式导入软件就可以使用了（只支持mihomo核）
+# 3然后保存“名称.yaml”文件格式到本地，导入软件就可以使用了（只支持mihomo核）
 
 # 这是机场配置，可以将下面的机场url链接换成自己的机场链接，保留引号符
 p: &p {type: http, interval: 3600, proxy: "🌍全球加速", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
