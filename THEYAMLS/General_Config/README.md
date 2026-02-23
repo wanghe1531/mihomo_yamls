@@ -2,19 +2,19 @@
 
 [🔙 返回主页](../../README.md)
 
-> 🤖 自动技术分析 | 30 个配置文件
+> 🤖 自动技术分析 | 33 个配置文件
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `AIB.yaml` | `AIO.yaml` | `MihomoPro_Config.yaml` | `OneTouch_Config.yaml` | `Clash-Airport.yaml` | `us_la.yaml` | `clash-fallback-dialer.yaml` | `clash-fallback-std.yaml` | `clash-fallback.yaml` | `clash-all-fallback.yaml` | `clash-fallback-all.yaml` | `Clash.yaml` | `config.yaml` | `MihomoAIO.yaml` | `MihomoProMax.yaml` | `MihomoProPlus.yaml` | `config.yaml` | `config_lite.yaml` | `config.yaml` | `ConfigForClash.yaml` | `mihomo.yaml` | `config.yaml` | `Clash_Sample.yaml` | `config.yaml` | `config.yaml` | `configfull_NoAd.yaml` | `configfull_lite.yaml` | `configfull.yaml` | `mihomo_single.yaml` | `mihomo_multi.yaml` |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 11.0 KB | 11.1 KB | 22.6 KB | 12.4 KB | 18.4 KB | 20.7 KB | 16.3 KB | 17.3 KB | 15.9 KB | 17.2 KB | 18.6 KB | 27.3 KB | 27.5 KB | 30.1 KB | 27.4 KB | 27.9 KB | 8.2 KB | 3.0 KB | 28.5 KB | 49.3 KB | 12.4 KB | 13.8 KB | 12.5 KB | 12.8 KB | 18.7 KB | 33.5 KB | 17.5 KB | 33.9 KB | 16.8 KB | 17.1 KB |
-| **混合端口** | 7890 | 7890 | 7893 | 7893 | 0 | 0 | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7892 | 0 | 7890 | 7892 | 7890 | 7892 | 7890 | 7890 | 7890 | 7897 | 7897 |
-| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9092 | 127.0.0.1:9092 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | :9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | - | 127.0.0.1:9090 | 0.0.0.0:9090 | - | :9090 | 0.0.0.0:9090 | - | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - |
-| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | Rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
-| **TUN** | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | 🚫 | ✅ | 🚫 | ✅ | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **策略组** | **24** | **24** | **52** | **15** | **14** | **14** | **35** | **36** | **34** | **53** | **61** | **27** | **96** | **61** | **54** | **54** | **18** | **1** | **25** | **62** | **18** | **29** | **22** | **26** | **13** | **59** | **47** | **62** | **55** | **55** |
-| **规则数** | **34** | **34** | **40** | **23** | **58** | **59** | **43** | **43** | **43** | **42** | **53** | **68** | **30** | **52** | **45** | **44** | **26** | **16** | **35** | **62** | **18** | **33** | **25** | **23** | **37** | **95** | **38** | **96** | **22** | **22** |
+| 特性 | `AIB.yaml` | `AIO.yaml` | `MihomoPro_Config.yaml` | `OneTouch_Config.yaml` | `Clash-Airport.yaml` | `us_la.yaml` | `Seven1_fallback_Rule-Set.yaml` | `Seven1_fallback_Geo.yaml` | `clash-fallback-dialer.yaml` | `clash-fallback-std.yaml` | `clash-fallback.yaml` | `clash-all-fallback.yaml` | `clash-fallback-all.yaml` | `Clash.yaml` | `config.yaml` | `MihomoAIO.yaml` | `MihomoProMax.yaml` | `MihomoProPlus.yaml` | `config.yaml` | `config_lite.yaml` | `mihomo.yaml` | `config.yaml` | `ConfigForClash.yaml` | `mihomo.yaml` | `config.yaml` | `Clash_Sample.yaml` | `config.yaml` | `config.yaml` | `configfull_NoAd.yaml` | `configfull_lite.yaml` | `configfull.yaml` | `mihomo_single.yaml` | `mihomo_multi.yaml` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **大小** | 11.0 KB | 11.1 KB | 22.6 KB | 12.4 KB | 18.4 KB | 20.7 KB | 20.8 KB | 18.9 KB | 16.3 KB | 17.3 KB | 15.9 KB | 17.2 KB | 18.6 KB | 27.3 KB | 27.5 KB | 30.1 KB | 27.4 KB | 27.9 KB | 8.2 KB | 3.0 KB | 16.2 KB | 28.5 KB | 49.3 KB | 12.4 KB | 13.8 KB | 12.5 KB | 12.8 KB | 18.7 KB | 33.5 KB | 17.5 KB | 34.0 KB | 16.8 KB | 17.1 KB |
+| **混合端口** | 7890 | 7890 | 7893 | 7893 | 0 | 0 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | 7893 | 7892 | 0 | 7890 | 7892 | 7890 | 7892 | 7890 | 7890 | 7890 | 7897 | 7897 |
+| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9092 | 127.0.0.1:9092 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | :9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | - | 0.0.0.0:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | - | :9090 | 0.0.0.0:9090 | - | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - |
+| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | Rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
+| **TUN** | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | 🚫 | ✅ | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **策略组** | **24** | **24** | **52** | **15** | **14** | **14** | **40** | **40** | **35** | **36** | **34** | **53** | **61** | **27** | **96** | **61** | **54** | **54** | **18** | **1** | **29** | **25** | **62** | **18** | **29** | **22** | **26** | **13** | **59** | **47** | **62** | **55** | **55** |
+| **规则数** | **34** | **34** | **40** | **23** | **58** | **59** | **27** | **26** | **43** | **43** | **43** | **42** | **53** | **68** | **30** | **52** | **45** | **44** | **26** | **16** | **28** | **35** | **62** | **18** | **33** | **25** | **23** | **37** | **95** | **38** | **96** | **22** | **22** |
 
 ## 📄 配置详情
 
@@ -363,7 +363,7 @@
 </details>
 
 #### 📝 configfull.yaml
-- **路径**: `Lanlan13-14/configfull.yaml` | **大小**: 33.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull.yaml)
+- **路径**: `Lanlan13-14/configfull.yaml` | **大小**: 34.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (62个)</summary>
@@ -518,6 +518,71 @@
 | 👆 ⛩️国内网站 | `select` |
 | 👆 🎯直连 | `select` |
 | 👆 🤡漏网之鱼 | `select` |
+</details>
+
+---
+### 👤 Seven1echo
+
+#### 📝 Seven1_fallback_Rule-Set.yaml
+- **路径**: `Seven1echo/Seven1_fallback_Rule-Set.yaml` | **大小**: 20.8 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Rule-Set.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (40个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 AppleTV | `select` |
+| 👆 Apple | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 🔧 香港故转 | `fallback` |
+| 👆 香港手动 | `select` |
+| ... | 还有 20 个 |
+</details>
+
+#### 📝 Seven1_fallback_Geo.yaml
+- **路径**: `Seven1echo/Seven1_fallback_Geo.yaml` | **大小**: 18.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Geo.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (40个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 AppleTV | `select` |
+| 👆 Apple | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 🔧 香港故转 | `fallback` |
+| 👆 香港手动 | `select` |
+| ... | 还有 20 个 |
 </details>
 
 ---
@@ -808,6 +873,40 @@
 | 👆 OneDrive | `select` |
 | 👆 微软服务 | `select` |
 | 👆 国内 | `select` |
+| ... | 还有 9 个 |
+</details>
+
+---
+### 👤 lvbibir
+
+#### 📝 mihomo.yaml
+- **路径**: `lvbibir/mihomo.yaml` | **大小**: 16.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/lvbibir/mihomo.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (29个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 🌐 全部节点 | `select` |
+| 👆 🚀 默认代理 | `select` |
+| 👆 🤖 AIGC | `select` |
+| 👆 🎮 Steam | `select` |
+| 👆 🐬 OneDrive | `select` |
+| 👆 Ⓜ️ Microsoft | `select` |
+| 👆 👨🏿‍💻 GitHub | `select` |
+| 👆 ✖️ X | `select` |
+| 👆 🎧 Sony | `select` |
+| 👆 ✈️ Telegram | `select` |
+| 👆 🍀 Google | `select` |
+| 👆 📹 YouTube | `select` |
+| 👆 🐟 漏网之鱼 | `select` |
+| 👆 🇺🇸 美国节点 | `select` |
+| 👆 🇯🇵 日本节点 | `select` |
+| 👆 🇸🇬 狮城节点 | `select` |
+| 👆 🇹🇼 台湾节点 | `select` |
+| 👆 🇭🇰 香港节点 | `select` |
+| 🔧 🔯 美国故转 | `fallback` |
 | ... | 还有 9 个 |
 </details>
 

@@ -8,7 +8,7 @@
 
 | 特性 | `configfull_NoAd.yaml` | `configfull_lite.yaml` | `configfull.yaml` |
 | :--- | :--- | :--- | :--- |
-| **大小** | 33.5 KB | 17.5 KB | 33.9 KB |
+| **大小** | 33.5 KB | 17.5 KB | 34.0 KB |
 | **混合端口** | 7890 | 7890 | 7890 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule | rule |
@@ -81,7 +81,7 @@
 </details>
 
 #### 📝 configfull.yaml
-- **路径**: `configfull.yaml` | **大小**: 33.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull.yaml)
+- **路径**: `configfull.yaml` | **大小**: 34.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (62个)</summary>
