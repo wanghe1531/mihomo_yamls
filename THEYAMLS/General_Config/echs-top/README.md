@@ -7,7 +7,7 @@
 ## 📄 配置详情
 
 #### 📝 mihomo.yaml
-- **路径**: `mihomo.yaml` | **大小**: 12.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/echs-top/mihomo.yaml)
+- **路径**: `mihomo.yaml` | **大小**: 12.4 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/echs-top/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (18个)</summary>
