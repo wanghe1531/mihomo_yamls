@@ -7,8 +7,8 @@
 ## 📄 配置详情
 
 #### 📝 mihomo.yaml
-- **路径**: `mihomo.yaml` | **大小**: 16.2 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/lvbibir/mihomo.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+- **路径**: `mihomo.yaml` | **大小**: 16.3 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/lvbibir/mihomo.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (29个)</summary>
 
