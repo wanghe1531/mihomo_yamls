@@ -19,7 +19,7 @@
 ## 📄 配置详情
 
 #### 📝 us_la.yaml
-- **路径**: `us_la.yaml` | **大小**: 19.8 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/us_la.yaml)
+- **路径**: `us_la.yaml` | **大小**: 19.8 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/us_la.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (15个)</summary>
@@ -44,7 +44,7 @@
 </details>
 
 #### 📝 Clash-Airport.yaml
-- **路径**: `Clash-Airport.yaml` | **大小**: 17.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/Clash-Airport.yaml)
+- **路径**: `Clash-Airport.yaml` | **大小**: 17.9 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/Clash-Airport.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (14个)</summary>
@@ -58,9 +58,9 @@
 | 👆 🎮国际游戏 | `select` |
 | 👆 💻Telegram | `select` |
 | 👆 🧠OpenAI | `select` |
-| 👆 😊微软服务 | `select` |
 | 👆 🌐Google服务 | `select` |
 | 👆 📺国际流媒体 | `select` |
+| 👆 😊微软服务 | `select` |
 | 👆 🍎苹果服务 | `select` |
 | 👆 ⛩️国内网站 | `select` |
 | 👆 🎯直连 | `select` |
