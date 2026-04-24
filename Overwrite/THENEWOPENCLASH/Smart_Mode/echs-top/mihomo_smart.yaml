@@ -1,6 +1,6 @@
 # OpenClash 覆写模块 - mihomo_smart.yaml
-# 生成日期：2026-04-09
-# 源文件：https://raw.githubusercontent.com/HenryChiao/MIHOMO_YAMLS/main/THEYAMLS/Smart_Mode/echs-top/mihomo_smart.yaml
+# 生成日期：2026-04-24
+# 源文件：https://raw.githubusercontent.com/wanghe1531/mihomo_yamls/main/THEYAMLS/Smart_Mode/echs-top/mihomo_smart.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
 # 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
@@ -91,7 +91,7 @@
 #     health-check: &id002
 #       enable: true
 #       expected-status: 204
-#       interval: 600
+#       interval: 900
 #       lazy: false
 #       max-failed-times: 2
 #       timeout: 3000
@@ -150,6 +150,12 @@
 #   - 法国|智能选择
 #   - 荷兰|智能选择
 #   type: select
+# - icon: https://mihomo.echs.top/img/icon/Network_2.webp
+#   name: 代理UDP
+#   proxies:
+#   - PASS
+#   - REJECT
+#   type: select
 # - icon: https://mihomo.echs.top/img/icon/DIRECT.webp
 #   name: 直接连接
 #   proxies:
@@ -177,6 +183,34 @@
 #   - 英国|智能选择
 #   - 法国|智能选择
 #   - 荷兰|智能选择
+#   - PASS
+#   - REJECT
+#   type: select
+# - icon: https://mihomo.echs.top/img/icon/FCM_Firebase_Cloud_Messaging.webp
+#   include-all-providers: true
+#   name: FCM服务
+#   proxies:
+#   - 直接连接
+#   - 代理连接
+#   - 最低延迟
+#   - 香港|智能选择
+#   - 台湾|智能选择
+#   - 新加坡|智能选择
+#   - 日本|智能选择
+#   - 韩国|智能选择
+#   - 美国|智能选择
+#   - 加拿大|智能选择
+#   - 德国|智能选择
+#   - 英国|智能选择
+#   - 法国|智能选择
+#   - 荷兰|智能选择
+#   - PASS
+#   - REJECT
+#   type: select
+# - icon: https://mihomo.echs.top/img/icon/CloudFlare.webp
+#   include-all-providers: true
+#   name: 人机验证
+#   proxies: *id001
 #   type: select
 # - icon: https://mihomo.echs.top/img/icon/AI.webp
 #   include-all-providers: true
@@ -201,6 +235,11 @@
 # - icon: https://mihomo.echs.top/img/icon/Google.webp
 #   include-all-providers: true
 #   name: GOOGLE
+#   proxies: *id001
+#   type: select
+# - icon: https://mihomo.echs.top/img/icon/Download_2.webp
+#   include-all-providers: true
+#   name: TRACKER
 #   proxies: *id001
 #   type: select
 # - hidden: true
@@ -350,13 +389,17 @@
 #   - 法国|智能选择
 #   - 荷兰|智能选择
 #   - 代理连接
+#   - 代理UDP
 #   - 直接连接
 #   - 代理DNS
+#   - FCM服务
+#   - 人机验证
 #   - 国外AI
 #   - TELEGRAM
 #   - GITHUB
 #   - 国外媒体
 #   - GOOGLE
+#   - TRACKER
 #   type: select
 
 # ==========================================================
@@ -391,6 +434,14 @@
 #     proxy: GITHUB
 #     type: http
 #     url: https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/apple-cn.mrs
+#   captcha:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/captcha.mrs
+#     proxy: GITHUB
+#     type: http
+#     url: https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/captcha_domain.mrs
 #   cn:
 #     behavior: domain
 #     format: mrs
@@ -559,6 +610,14 @@
 #     proxy: GITHUB
 #     type: http
 #     url: https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/telegram_ip.mrs
+#   trackerslist:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/trackerslist.mrs
+#     proxy: GITHUB
+#     type: http
+#     url: https://raw.githubusercontent.com/echs-top/proxy/main/rules/mrs/trackerslist.mrs
 
 # ==========================================================
 # rules（从源文件直接提取）
@@ -572,30 +631,49 @@
 # ==========================================================
 #
 # rules:
-# - DST-PORT,5228-5230,直接连接
+# - DST-PORT,5228-5230,FCM服务
+# - AND,((NETWORK,UDP),(DST-PORT,1337/2710/6881-6999/7777)),代理UDP
+# - DST-PORT,1337/2710/6881-6999/7777,TRACKER
 # - RULE-SET,private_ip,直接连接,no-resolve
 # - RULE-SET,AWAvenue-Ads,REJECT
 # - RULE-SET,private,直接连接
-# - RULE-SET,fcm,直接连接
+# - RULE-SET,fcm,FCM服务
+# - AND,((NETWORK,UDP),(RULE-SET,captcha)),代理UDP
+# - RULE-SET,captcha,人机验证
+# - AND,((NETWORK,UDP),(RULE-SET,ai)),代理UDP
 # - RULE-SET,ai,国外AI
+# - AND,((NETWORK,UDP),(RULE-SET,telegram)),代理UDP
 # - RULE-SET,telegram,TELEGRAM
+# - AND,((NETWORK,UDP),(RULE-SET,github)),代理UDP
 # - RULE-SET,github,GITHUB
+# - AND,((NETWORK,UDP),(RULE-SET,media)),代理UDP
 # - RULE-SET,media,国外媒体
+# - AND,((NETWORK,UDP),(RULE-SET,google)),代理UDP
 # - RULE-SET,google,GOOGLE
+# - AND,((NETWORK,UDP),(RULE-SET,trackerslist)),代理UDP
+# - RULE-SET,trackerslist,TRACKER
 # - RULE-SET,apple-cn,直接连接
 # - RULE-SET,microsoft-cn,直接连接
 # - RULE-SET,games-cn,直接连接
+# - AND,((NETWORK,UDP),(RULE-SET,proxy_domain)),代理UDP
 # - RULE-SET,proxy_domain,代理连接
 # - RULE-SET,direct_domain,直接连接
+# - AND,((NETWORK,UDP),(RULE-SET,proxy)),代理UDP
 # - RULE-SET,proxy,代理连接
 # - RULE-SET,cn,直接连接
+# - AND,((NETWORK,UDP),(RULE-SET,telegram_ip)),代理UDP
 # - RULE-SET,telegram_ip,TELEGRAM
+# - AND,((NETWORK,UDP),(RULE-SET,media_ip)),代理UDP
 # - RULE-SET,media_ip,国外媒体
+# - AND,((NETWORK,UDP),(RULE-SET,google_ip)),代理UDP
 # - RULE-SET,google_ip,GOOGLE
 # - RULE-SET,enhanced-FaaS-in-China_ip,直接连接
+# - AND,((NETWORK,UDP),(RULE-SET,proxy_ip)),代理UDP
 # - RULE-SET,proxy_ip,代理连接
 # - RULE-SET,direct_ip,直接连接
 # - RULE-SET,cn_ip,直接连接
+# - NETWORK,UDP,代理UDP
+# - DST-PORT,10000-65535,TRACKER
 # - MATCH,代理连接
 
 # ==========================================================
@@ -617,12 +695,14 @@
 #   fake-ip-filter:
 #   - RULE-SET,AWAvenue-Ads,fake-ip
 #   - RULE-SET,private,real-ip
-#   - RULE-SET,fcm,real-ip
+#   - RULE-SET,fcm,fake-ip
+#   - RULE-SET,captcha,fake-ip
 #   - RULE-SET,ai,fake-ip
 #   - RULE-SET,telegram,fake-ip
 #   - RULE-SET,github,fake-ip
 #   - RULE-SET,media,fake-ip
 #   - RULE-SET,google,fake-ip
+#   - RULE-SET,trackerslist,fake-ip
 #   - RULE-SET,apple-cn,real-ip
 #   - RULE-SET,microsoft-cn,real-ip
 #   - RULE-SET,games-cn,real-ip
@@ -643,6 +723,7 @@
 #     - rcode://name_error
 #     rule-set:ai: *id001
 #     rule-set:apple-cn: *id002
+#     rule-set:captcha: *id001
 #     rule-set:cn: *id002
 #     rule-set:direct_domain: *id002
 #     rule-set:dnsmasq-china-add: *id002
@@ -657,6 +738,7 @@
 #     rule-set:proxy: *id001
 #     rule-set:proxy_domain: *id001
 #     rule-set:telegram: *id001
+#     rule-set:trackerslist: *id001
 #   prefer-h3: true
 #   proxy-server-nameserver: *id002
 #   respect-rules: false
