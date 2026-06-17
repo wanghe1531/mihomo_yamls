@@ -2,19 +2,19 @@
 
 [🔙 返回主页](../../README.md)
 
-> 🤖 自动技术分析 | 38 个配置文件
+> 🤖 自动技术分析 | 37 个配置文件
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `Clash_Sample.yaml` | `backup.yaml` | `AIB.yaml` | `AIO.yaml` | `mihomo_multi.yaml` | `mihomo_single.yaml` | `2-subscription-clash-rule-set.yaml` | `base-clash-ruleset.yaml` | `3-subscription-clash-rule-set.yaml` | `clash-fallback-all.yaml` | `clash-fallback-std.yaml` | `clash-fallback-dialer.yaml` | `clash-all-fallback.yaml` | `clash-fallback.yaml` | `config.yaml` | `us_la.yaml` | `Clash-Airport.yaml` | `OneTouch_Config.yaml` | `MihomoPro_Config.yaml` | `config.yaml` | `mihomo.yaml` | `configfull_lite.yaml` | `configfull_NoAd.yaml` | `configfull.yaml` | `Seven1_fallback_Geo.yaml` | `Seven1_fallback_Rule-Set.yaml` | `mihomo.yaml` | `mihomo.yaml` | `config.yaml` | `MihomoProMax.yaml` | `MihomoAIO.yaml` | `MihomoProPlus.yaml` | `Clash.yaml` | `config.yaml` | `config.yaml` | `config_lite.yaml` | `config.yaml` | `ConfigForClash.yaml` |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 8.4 KB | 12.5 KB | 11.0 KB | 10.8 KB | 12.7 KB | 12.4 KB | 13.4 KB | 11.5 KB | 13.9 KB | 18.6 KB | 17.3 KB | 16.3 KB | 17.2 KB | 15.9 KB | 12.8 KB | 18.5 KB | 17.5 KB | 12.2 KB | 22.3 KB | 28.5 KB | 5.8 KB | 17.7 KB | 34.1 KB | 34.6 KB | 20.8 KB | 24.0 KB | 10.2 KB | 15.8 KB | 23.4 KB | 25.7 KB | 28.3 KB | 26.2 KB | 27.3 KB | 18.7 KB | 8.0 KB | 2.9 KB | 13.8 KB | 49.3 KB |
-| **混合端口** | 7892 | 7892 | 7890 | 7890 | 7897 | 7897 | - | - | - | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | - | - | 7893 | 7893 | 7893 | 8899 | 7890 | 7890 | 7890 | 7893 | 7893 | 0 | 7890 | 7890 | 7893 | 7893 | 7893 | 7890 | 7892 | 7893 | 7893 | 7890 | 7892 |
-| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - | - | - | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | 127.0.0.1:9092 | 127.0.0.1:9092 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | :9090 | 127.0.0.1:9090 | - | - | :9090 | 0.0.0.0:9090 |
-| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | Rule | rule | rule | rule | rule | rule |
-| **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | 🚫 |
-| **策略组** | **15** | **22** | **24** | **23** | **33** | **33** | **37** | **27** | **38** | **61** | **36** | **35** | **53** | **34** | **26** | **15** | **23** | **14** | **51** | **25** | **9** | **47** | **59** | **62** | **43** | **43** | **19** | **29** | **49** | **54** | **61** | **54** | **27** | **13** | **18** | **1** | **29** | **62** |
-| **规则数** | **11** | **25** | **34** | **34** | **22** | **22** | **20** | **17** | **20** | **53** | **43** | **43** | **42** | **43** | **23** | **34** | **36** | **23** | **40** | **35** | **12** | **38** | **97** | **98** | **29** | **29** | **10** | **27** | **30** | **45** | **52** | **44** | **68** | **37** | **25** | **16** | **33** | **62** |
+| 特性 | `Clash_Sample.yaml` | `backup.yaml` | `AIB.yaml` | `AIO.yaml` | `mihomo_multi.yaml` | `mihomo_single.yaml` | `2-subscription-clash-rule-set.yaml` | `base-clash-ruleset.yaml` | `3-subscription-clash-rule-set.yaml` | `clash-fallback-all.yaml` | `clash-fallback-std.yaml` | `clash-fallback-dialer.yaml` | `clash-all-fallback.yaml` | `clash-fallback.yaml` | `config.yaml` | `us_la.yaml` | `Clash-Airport.yaml` | `OneTouch_Config.yaml` | `MihomoPro_Config.yaml` | `config.yaml` | `mihomo.yaml` | `configfull_lite.yaml` | `configfull_NoAd.yaml` | `configfull.yaml` | `Seven1_fallback_Geo.yaml` | `Seven1_fallback_Rule-Set.yaml` | `mihomo.yaml` | `config.yaml` | `MihomoProMax.yaml` | `MihomoAIO.yaml` | `MihomoProPlus.yaml` | `Clash.yaml` | `config.yaml` | `config.yaml` | `config_lite.yaml` | `config.yaml` | `ConfigForClash.yaml` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **大小** | 8.4 KB | 12.5 KB | 11.0 KB | 10.8 KB | 12.7 KB | 12.4 KB | 13.4 KB | 11.5 KB | 13.9 KB | 18.6 KB | 17.3 KB | 16.3 KB | 17.2 KB | 15.9 KB | 12.8 KB | 18.5 KB | 17.5 KB | 12.2 KB | 22.3 KB | 28.5 KB | 5.8 KB | 17.7 KB | 34.1 KB | 34.6 KB | 20.8 KB | 24.0 KB | 15.8 KB | 23.4 KB | 25.7 KB | 28.3 KB | 26.2 KB | 27.3 KB | 18.7 KB | 8.0 KB | 2.9 KB | 13.8 KB | 49.3 KB |
+| **混合端口** | 7892 | 7892 | 7890 | 7890 | 7897 | 7897 | - | - | - | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | - | - | 7893 | 7893 | 7893 | 8899 | 7890 | 7890 | 7890 | 7893 | 7893 | 7890 | 7890 | 7893 | 7893 | 7893 | 7890 | 7892 | 7893 | 7893 | 7890 | 7892 |
+| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - | - | - | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | 127.0.0.1:9092 | 127.0.0.1:9092 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | :9090 | 127.0.0.1:9090 | - | - | :9090 | 0.0.0.0:9090 |
+| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | Rule | rule | rule | rule | rule | rule |
+| **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | 🚫 |
+| **策略组** | **15** | **22** | **24** | **23** | **33** | **33** | **37** | **27** | **38** | **61** | **36** | **35** | **53** | **34** | **26** | **15** | **23** | **14** | **51** | **25** | **9** | **47** | **59** | **62** | **43** | **43** | **29** | **49** | **54** | **61** | **54** | **27** | **13** | **18** | **1** | **29** | **62** |
+| **规则数** | **11** | **25** | **34** | **34** | **22** | **22** | **20** | **17** | **20** | **53** | **43** | **43** | **42** | **43** | **23** | **34** | **36** | **23** | **40** | **35** | **12** | **38** | **97** | **98** | **29** | **29** | **27** | **30** | **45** | **52** | **44** | **68** | **37** | **25** | **16** | **33** | **62** |
 
 ## 📄 配置详情
 
@@ -708,38 +708,6 @@
 | 👆 Google | `select` |
 | 👆 秋风净化 | `select` |
 | 👆 ♾️ | `select` |
-</details>
-
----
-### 👤 echs-top
-
-#### 📝 mihomo.yaml
-- **路径**: `echs-top/mihomo.yaml` | **大小**: 10.2 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/echs-top/mihomo.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (19个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 代理连接 | `select` |
-| 👆 直接连接 | `select` |
-| 👆 代理DNS | `select` |
-| 👆 代理QUIC | `select` |
-| 👆 国外AI | `select` |
-| 👆 TELEGRAM | `select` |
-| ♻️ 最低延迟 | `url-test` |
-| 🔧 香港&#124;故障转移 | `fallback` |
-| 🔧 台湾&#124;故障转移 | `fallback` |
-| 🔧 新加坡&#124;故障转移 | `fallback` |
-| 🔧 日本&#124;故障转移 | `fallback` |
-| 🔧 韩国&#124;故障转移 | `fallback` |
-| 🔧 美国&#124;故障转移 | `fallback` |
-| 🔧 加拿大&#124;故障转移 | `fallback` |
-| 🔧 德国&#124;故障转移 | `fallback` |
-| 🔧 英国&#124;故障转移 | `fallback` |
-| 🔧 法国&#124;故障转移 | `fallback` |
-| 🔧 荷兰&#124;故障转移 | `fallback` |
-| 👆 GLOBAL | `select` |
 </details>
 
 ---
