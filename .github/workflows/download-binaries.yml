@@ -45,7 +45,7 @@ jobs:
     
     steps:
       - name: Checkout主仓库
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: 下载并处理
         run: |
