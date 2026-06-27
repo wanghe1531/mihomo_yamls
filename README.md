@@ -11,7 +11,7 @@
 [![Issues](https://img.shields.io/github/issues/HenryChiao/mihomo_yamls?style=flat-square&logo=github&color=0969da)](https://github.com/HenryChiao/mihomo_yamls/issues)
 [![License](https://img.shields.io/github/license/HenryChiao/mihomo_yamls?style=flat-square&color=546e7a)](./LICENSE)
 
-[📖 开始使用](./THEDOC/THE_REAL_README.md) &nbsp;|&nbsp; [⬇️ 客户端下载](./THEDOC/CLIENTS.md) &nbsp;|&nbsp; [💐 致谢名单](./THEDOC/CREDITS.md) &nbsp;|&nbsp; [💬 反馈问题](https://github.com/HenryChiao/mihomo_yamls/issues)
+[📖 开始使用](./THEDOC/THE_REAL_README.md) &nbsp;|&nbsp; [📚 Wiki 教程](https://github.com/HenryChiao/MIHOMO_YAMLS/wiki) &nbsp;|&nbsp; [⬇️ 客户端下载](./THEDOC/CLIENTS.md) &nbsp;|&nbsp; [💐 致谢名单](./THEDOC/CREDITS.md) &nbsp;|&nbsp; [💬 反馈问题](https://github.com/HenryChiao/mihomo_yamls/issues)
 
 </div>
 
@@ -23,6 +23,7 @@
 - **严格分类**：拒绝杂乱，提供清晰的分类逻辑，满足不同场景需求。
 - **透明来源**：[数据源自开源社区](./THEDOC/CREDITS.md)，整合优质资源，纯净无后门。
 - **开箱即用**：专为新手优化，无需复杂配置，导入即可畅享流畅体验。
+- **进阶可学**：[配套 Wiki](https://github.com/HenryChiao/MIHOMO_YAMLS/wiki) 系统讲解配置语法与设计思路，新手用现成的，老手也能学着自己写。
 
 ---
 
@@ -30,28 +31,35 @@
 
 <table width="100%">
     <tr>
-        <td width="25%" align="center">
+        <td width="20%" align="center">
             <h3>📖 使用文档</h3>
             <p>从下载到进阶的全方位指南</p>
             <a href="./THEDOC/THE_REAL_README.md">
                 <img src="https://img.shields.io/badge/配置分类-Categories-blue?style=for-the-badge&logo=readthedocs" alt="Docs">
             </a>
         </td>
-        <td width="25%" align="center">
+        <td width="20%" align="center">
+            <h3>📚 Wiki 教程</h3>
+            <p>手把手教你写出一份优秀的配置</p>
+            <a href="https://github.com/HenryChiao/MIHOMO_YAMLS/wiki">
+                <img src="https://img.shields.io/badge/进阶教程-Wiki-9c27b0?style=for-the-badge&logo=wikipedia" alt="Wiki">
+            </a>
+        </td>
+        <td width="20%" align="center">
             <h3>⬇️ 客户端清单</h3>
             <p>全平台 Mihomo/Meta 客户端汇总</p>
             <a href="./THEDOC/CLIENTS.md">
                 <img src="https://img.shields.io/badge/下载软件-Clients-2ea44f?style=for-the-badge&logo=android" alt="Clients">
             </a>
         </td>
-        <td width="25%" align="center">
+         <td width="20%" align="center">
             <h3>🛠️ 规则集说明</h3>
             <p>深入了解分流机制与自定义</p>
             <a href="./THEDOC/RULESET_README.md">
                 <img src="https://img.shields.io/badge/规则说明-RuleSets-orange?style=for-the-badge&logo=adblock" alt="Rules">
             </a>
         </td>
-         <td width="25%" align="center">
+         <td width="20%" align="center">
             <h3>💐 致谢与来源</h3>
             <p>感谢上游开源项目的贡献</p>
             <a href="./THEDOC/CREDITS.md">
@@ -70,6 +78,7 @@
 > 
 > 感谢各位大佬的热心推荐！如果您是初次接触，**强烈建议不要直接修改配置文件**。
 > <br>无论是使用订阅转换，还是直接套用本项目的托管模板，效果通常比自己手动修改更稳定、更流畅。
+> <br>如果之后想知其所以然、自己动手调整，欢迎移步 [📚 项目 Wiki](https://github.com/HenryChiao/MIHOMO_YAMLS/wiki) 系统学习。
 
 ---
 
