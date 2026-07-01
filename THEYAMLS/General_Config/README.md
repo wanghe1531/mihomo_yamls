@@ -8,13 +8,13 @@
 
 | 特性 | `Clash_Sample.yaml` | `backup.yaml` | `AIB.yaml` | `AIO.yaml` | `mihomo_multi.yaml` | `mihomo_single.yaml` | `2-subscription-clash-rule-set.yaml` | `base-clash-ruleset.yaml` | `3-subscription-clash-rule-set.yaml` | `clash-fallback-all.yaml` | `clash-fallback-std.yaml` | `clash-fallback-dialer.yaml` | `clash-all-fallback.yaml` | `clash-fallback.yaml` | `config.yaml` | `us_la.yaml` | `Clash-Airport.yaml` | `OneTouch_Config.yaml` | `MihomoPro_Config.yaml` | `config.yaml` | `mihomo.yaml` | `configfull_lite.yaml` | `configfull_NoAd.yaml` | `configfull.yaml` | `Seven1_fallback_Geo.yaml` | `Seven1_fallback_Rule-Set.yaml` | `mihomo.yaml` | `mihomo.yaml` | `config.yaml` | `MihomoProMax.yaml` | `MihomoAIO.yaml` | `MihomoProPlus.yaml` | `Clash.yaml` | `config.yaml` | `config.yaml` | `config_lite.yaml` | `config.yaml` | `ConfigForClash.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 8.4 KB | 12.5 KB | 11.0 KB | 10.8 KB | 12.7 KB | 12.4 KB | 13.4 KB | 11.5 KB | 13.9 KB | 18.6 KB | 17.3 KB | 16.3 KB | 17.2 KB | 15.9 KB | 12.8 KB | 18.5 KB | 17.5 KB | 12.2 KB | 22.3 KB | 28.5 KB | 5.8 KB | 17.7 KB | 34.1 KB | 34.6 KB | 20.8 KB | 24.0 KB | 14.6 KB | 15.8 KB | 23.4 KB | 25.7 KB | 28.3 KB | 26.2 KB | 27.3 KB | 18.7 KB | 8.0 KB | 2.9 KB | 13.8 KB | 49.3 KB |
+| **大小** | 8.4 KB | 12.5 KB | 11.0 KB | 10.8 KB | 12.7 KB | 12.4 KB | 13.4 KB | 11.5 KB | 13.9 KB | 18.6 KB | 17.3 KB | 16.3 KB | 17.2 KB | 15.9 KB | 12.8 KB | 18.5 KB | 17.5 KB | 12.2 KB | 22.3 KB | 28.5 KB | 5.8 KB | 17.7 KB | 34.1 KB | 34.6 KB | 20.8 KB | 24.0 KB | 14.6 KB | 15.8 KB | 23.4 KB | 25.7 KB | 28.3 KB | 26.2 KB | 27.3 KB | 18.7 KB | 7.3 KB | 2.9 KB | 13.8 KB | 49.3 KB |
 | **混合端口** | 7892 | 7892 | 7890 | 7890 | 7897 | 7897 | - | - | - | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | - | - | 7893 | 7893 | 7893 | 8899 | 7890 | 7890 | 7890 | 7893 | 7893 | 0 | 7890 | 7890 | 7893 | 7893 | 7893 | 7890 | 7892 | 7893 | 7893 | 7890 | 7892 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - | - | - | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | 127.0.0.1:9092 | 127.0.0.1:9092 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | :9090 | 127.0.0.1:9090 | - | - | :9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | Rule | rule | rule | rule | rule | rule |
 | **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | 🚫 |
-| **策略组** | **15** | **22** | **24** | **23** | **33** | **33** | **37** | **27** | **38** | **61** | **36** | **35** | **53** | **34** | **26** | **15** | **23** | **14** | **51** | **25** | **9** | **47** | **59** | **62** | **43** | **43** | **35** | **29** | **49** | **54** | **61** | **54** | **27** | **13** | **18** | **1** | **29** | **62** |
-| **规则数** | **11** | **25** | **34** | **34** | **22** | **22** | **20** | **17** | **20** | **53** | **43** | **43** | **42** | **43** | **23** | **34** | **36** | **23** | **40** | **35** | **12** | **38** | **97** | **98** | **29** | **29** | **17** | **27** | **30** | **45** | **52** | **44** | **68** | **37** | **25** | **16** | **33** | **62** |
+| **策略组** | **15** | **22** | **24** | **23** | **33** | **33** | **37** | **27** | **38** | **61** | **36** | **35** | **53** | **34** | **26** | **15** | **23** | **14** | **51** | **25** | **9** | **47** | **59** | **62** | **43** | **43** | **35** | **29** | **49** | **54** | **61** | **54** | **27** | **13** | **17** | **1** | **29** | **62** |
+| **规则数** | **11** | **25** | **34** | **34** | **22** | **22** | **20** | **17** | **20** | **53** | **43** | **43** | **42** | **43** | **23** | **34** | **36** | **23** | **40** | **35** | **12** | **38** | **97** | **98** | **29** | **29** | **17** | **27** | **30** | **45** | **52** | **44** | **68** | **37** | **24** | **16** | **33** | **62** |
 
 ## 📄 配置详情
 
@@ -526,31 +526,30 @@
 ### 👤 Repcz
 
 #### 📝 config.yaml
-- **路径**: `Repcz/config.yaml` | **大小**: 8.0 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Repcz/config.yaml)
+- **路径**: `Repcz/config.yaml` | **大小**: 7.3 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Repcz/config.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
-<summary>🔍 策略组 (18个)</summary>
+<summary>🔍 策略组 (17个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
-| 👆 手动切换 | `select` |
-| 👆 国外网站 | `select` |
-| 👆 国际媒体 | `select` |
-| 👆 苹果服务 | `select` |
-| 👆 微软服务 | `select` |
-| 👆 谷歌服务 | `select` |
-| 👆 电报消息 | `select` |
-| 👆 推特消息 | `select` |
+| 👆 Manual | `select` |
+| 👆 Global | `select` |
+| 👆 Streaming | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Google | `select` |
 | 👆 AI | `select` |
-| 👆 游戏平台 | `select` |
+| 👆 Social | `select` |
+| 👆 Telegram | `select` |
+| 👆 Game | `select` |
 | 👆 Emby | `select` |
 | 👆 Spotify | `select` |
-| 👆 兜底分流 | `select` |
-| ♻️ 香港节点 | `url-test` |
-| ♻️ 美国节点 | `url-test` |
-| ♻️ 狮城节点 | `url-test` |
-| ♻️ 日本节点 | `url-test` |
-| ♻️ 台湾节点 | `url-test` |
+| 👆 Final | `select` |
+| ♻️ HongKong | `url-test` |
+| ♻️ United States | `url-test` |
+| ♻️ Singapore | `url-test` |
+| ♻️ Japan | `url-test` |
+| ♻️ Taiwan | `url-test` |
 </details>
 
 #### 📝 config_lite.yaml
