@@ -1,6 +1,6 @@
 # OpenClash 覆写模块 - mihomoconfig.yaml
-# 生成日期：2026-07-05
-# 源文件：https://raw.githubusercontent.com/HenryChiao/MIHOMO_YAMLS/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml
+# 生成日期：2026-07-10
+# 源文件：https://raw.githubusercontent.com/wanghe1531/mihomo_yamls/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
 # 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
@@ -176,7 +176,8 @@
 #   timeout: 3000
 #   type: select
 #   url: https://g.cn/generate_204
-# - empty-fallback: REJECT
+# - default-selected: 日本
+#   empty-fallback: REJECT
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
 #   interval: 600
 #   lazy: true
@@ -215,16 +216,6 @@
 #   lazy: true
 #   max-failed-times: 3
 #   name: Google
-#   proxies: *id001
-#   timeout: 3000
-#   type: select
-#   url: https://g.cn/generate_204
-# - empty-fallback: REJECT
-#   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/GitHub.png
-#   interval: 600
-#   lazy: true
-#   max-failed-times: 3
-#   name: GitHub
 #   proxies: *id001
 #   timeout: 3000
 #   type: select
@@ -301,6 +292,16 @@
 #   type: select
 #   url: https://g.cn/generate_204
 # - empty-fallback: REJECT
+#   icon: https://fastly.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/03CNSoft/pikpak.png
+#   interval: 600
+#   lazy: true
+#   max-failed-times: 3
+#   name: PikPak
+#   proxies: *id002
+#   timeout: 3000
+#   type: select
+#   url: https://g.cn/generate_204
+# - empty-fallback: REJECT
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
 #   interval: 600
 #   lazy: true
@@ -324,6 +325,18 @@
 #   type: select
 #   url: https://g.cn/generate_204
 # - empty-fallback: REJECT
+#   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Stack.png
+#   interval: 600
+#   lazy: true
+#   max-failed-times: 3
+#   name: 漏网之鱼
+#   proxies:
+#   - 默认代理
+#   - 直连
+#   timeout: 3000
+#   type: select
+#   url: https://g.cn/generate_204
+# - empty-fallback: REJECT
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/China_Map.png
 #   interval: 600
 #   lazy: true
@@ -336,18 +349,6 @@
 #   timeout: 3000
 #   type: select
 #   url: https://connectivitycheck.platform.hicloud.com/generate_204
-# - empty-fallback: REJECT
-#   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Stack.png
-#   interval: 600
-#   lazy: true
-#   max-failed-times: 3
-#   name: 漏网之鱼
-#   proxies:
-#   - 默认代理
-#   - 直连
-#   timeout: 3000
-#   type: select
-#   url: https://g.cn/generate_204
 # - empty-fallback: REJECT
 #   filter: 🇭🇰|港|HK|[Hh]ong\s*[Kk]ong
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
@@ -902,6 +903,14 @@
 #     path-in-bundle: geo/geosite/nvidia@cn.mrs
 #     type: http
 #     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/nvidia@cn.mrs
+#   pikpak:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/pikpak.mrs
+#     path-in-bundle: geo/geosite/pikpak.mrs
+#     type: http
+#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/pikpak.mrs
 #   pornhub:
 #     behavior: domain
 #     format: mrs
@@ -1034,7 +1043,7 @@
 # - RULE-SET,pornhub,Media
 # - RULE-SET,googlefcm,FCM
 # - RULE-SET,google,Google
-# - RULE-SET,github,GitHub
+# - RULE-SET,github,默认代理
 # - RULE-SET,microsoft,Microsoft
 # - RULE-SET,apple,Apple
 # - RULE-SET,telegram,Telegram
@@ -1044,6 +1053,7 @@
 # - RULE-SET,emby,Emby
 # - DOMAIN-SUFFIX,mb3admin.com,Emby
 # - DOMAIN-KEYWORD,emby,Emby
+# - RULE-SET,pikpak,PikPak
 # - RULE-SET,spotify,Spotify
 # - RULE-SET,google_ip,Google,no-resolve
 # - RULE-SET,telegram_ip,Telegram,no-resolve

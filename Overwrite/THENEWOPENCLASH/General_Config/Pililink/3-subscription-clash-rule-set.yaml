@@ -1,6 +1,6 @@
 # OpenClash 覆写模块 - 3-subscription-clash-rule-set.yaml
-# 生成日期：2026-07-05
-# 源文件：https://raw.githubusercontent.com/HenryChiao/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Pililink/3-subscription-clash-rule-set.yaml
+# 生成日期：2026-07-10
+# 源文件：https://raw.githubusercontent.com/wanghe1531/mihomo_yamls/main/THEYAMLS/General_Config/Pililink/3-subscription-clash-rule-set.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
 # 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
@@ -89,7 +89,7 @@
 #       interval: 600
 #       url: https://www.gstatic.com/generate_204
 #     interval: 300
-#     path: ./proxy_provider/air1.yaml
+#     path: ./proxy_provider/air3-1.yaml
 #     type: http
 #     url: ''
 #   B机场:
@@ -98,7 +98,7 @@
 #       interval: 600
 #       url: https://www.gstatic.com/generate_204
 #     interval: 300
-#     path: ./proxy_provider/air2.yaml
+#     path: ./proxy_provider/air3-2.yaml
 #     type: http
 #     url: ''
 #   C机场:
@@ -107,7 +107,7 @@
 #       interval: 600
 #       url: https://www.gstatic.com/generate_204
 #     interval: 300
-#     path: ./proxy_provider/air3.yaml
+#     path: ./proxy_provider/air3-3.yaml
 #     type: http
 #     url: ''
 
@@ -442,61 +442,117 @@
 #
 # rule-providers:
 #   ads:
-#     behavior: domain
-#     format: text
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/ads.list
+#     path: ./rule_provider/acl4ssr-ban-ad.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/ads.list
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
 #   ai:
-#     behavior: domain
-#     format: text
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/ai.list
+#     path: ./rule_provider/acl4ssr-ai.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.list
-#   apple-cn:
-#     behavior: domain
-#     format: text
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/AI.yaml
+#   apple:
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/apple-cn.list
+#     path: ./rule_provider/acl4ssr-apple.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/apple-cn.list
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Apple.yaml
 #   cn:
-#     behavior: domain
-#     format: text
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/cn.list
+#     path: ./rule_provider/acl4ssr-china-domain.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/cn.list
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
 #   cnip:
 #     behavior: ipcidr
-#     format: text
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/cnip.list
+#     path: ./rule_provider/acl4ssr-china-ip.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/cnip.list
-#   games-cn:
-#     behavior: domain
-#     format: text
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml
+#   download:
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/games-cn.list
+#     path: ./rule_provider/acl4ssr-download.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/games-cn.list
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Download.yaml
+#   game-download:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-game-download.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GameDownload.yaml
+#   game-epic:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-game-epic.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
+#   game-nintendo:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-game-nintendo.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Nintendo.yaml
+#   game-origin:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-game-origin.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Origin.yaml
+#   game-sony:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-game-sony.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Sony.yaml
+#   game-steam:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-game-steam.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Steam.yaml
+#   game-xbox:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-game-xbox.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Xbox.yaml
+#   google:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-google.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Google.yaml
 #   google-cn:
-#     behavior: domain
-#     format: text
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/google-cn.list
+#     path: ./rule_provider/acl4ssr-google-cn.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/google-cn.list
-#   microsoft-cn:
-#     behavior: domain
-#     format: text
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml
+#   microsoft:
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/microsoft-cn.list
+#     path: ./rule_provider/acl4ssr-microsoft.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/microsoft-cn.list
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml
 #   myignore:
 #     behavior: classical
 #     format: text
@@ -511,41 +567,48 @@
 #     path: ./rule_provider/myproxy.list
 #     type: http
 #     url: https://raw.githubusercontent.com/Pililink/AirRules/refs/heads/main/clash/ruleset/proxy.list
-#   networktest:
-#     behavior: classical
-#     format: text
-#     interval: 7200
-#     path: ./rule_provider/networktest.list
-#     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/networktest.list
 #   private:
-#     behavior: domain
-#     format: text
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/private.list
+#     path: ./rule_provider/acl4ssr-local-area-network.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/private.list
-#   privateip:
-#     behavior: ipcidr
-#     format: text
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+#   program-ads:
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/privateip.list
+#     path: ./rule_provider/acl4ssr-ban-program-ad.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/privateip.list
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
 #   proxy:
-#     behavior: domain
-#     format: text
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/proxy.list
+#     path: ./rule_provider/acl4ssr-proxy-gfwlist.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/proxy.list
-#   telegramip:
-#     behavior: ipcidr
-#     format: text
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml
+#   steam-cn:
+#     behavior: classical
+#     format: yaml
 #     interval: 7200
-#     path: ./rule_provider/telegramip.list
+#     path: ./rule_provider/acl4ssr-steam-cn.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/telegramip.list
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/SteamCN.yaml
+#   telegram:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-telegram.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml
+#   unban:
+#     behavior: classical
+#     format: yaml
+#     interval: 7200
+#     path: ./rule_provider/acl4ssr-unban.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml
 
 # ==========================================================
 # rules（从源文件直接提取）
@@ -559,23 +622,28 @@
 # ==========================================================
 #
 # rules:
-# - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+# - RULE-SET,private,🔒 私有网络
+# - RULE-SET,unban,🎯 全球直连
 # - RULE-SET,myignore,DIRECT
 # - RULE-SET,ads,🛑 广告拦截
-# - RULE-SET,private,🔒 私有网络
-# - RULE-SET,myproxy,🪜 代理域名
-# - RULE-SET,microsoft-cn,🪟 微软服务
-# - RULE-SET,apple-cn,🍎 苹果服务
-# - RULE-SET,google-cn,🇬 谷歌服务
-# - RULE-SET,games-cn,🎮 游戏服务
-# - DOMAIN-SUFFIX,hf.co,🪜 代理域名
-# - DOMAIN-SUFFIX,hf.space,🪜 代理域名
-# - DOMAIN-SUFFIX,huggingface.co,🪜 代理域名
-# - RULE-SET,ai,🤖 人工智能
-# - RULE-SET,networktest,📈 网络测试
-# - RULE-SET,proxy,🪜 代理域名
+# - RULE-SET,program-ads,🛑 广告拦截
+# - RULE-SET,download,🎯 全球直连
+# - RULE-SET,google-cn,🎯 全球直连
+# - RULE-SET,steam-cn,🎯 全球直连
 # - RULE-SET,cn,🇨🇳 直连域名
-# - RULE-SET,telegramip,📲 电报消息,no-resolve
-# - RULE-SET,privateip,🔒 私有网络,no-resolve
-# - RULE-SET,cnip,🇨🇳 直连 IP
+# - RULE-SET,myproxy,🪜 代理域名
+# - RULE-SET,microsoft,🪟 微软服务
+# - RULE-SET,apple,🍎 苹果服务
+# - RULE-SET,google,🇬 谷歌服务
+# - RULE-SET,ai,🤖 人工智能
+# - RULE-SET,telegram,📲 电报消息
+# - RULE-SET,game-download,🎮 游戏服务
+# - RULE-SET,game-epic,🎮 游戏服务
+# - RULE-SET,game-origin,🎮 游戏服务
+# - RULE-SET,game-sony,🎮 游戏服务
+# - RULE-SET,game-steam,🎮 游戏服务
+# - RULE-SET,game-nintendo,🎮 游戏服务
+# - RULE-SET,game-xbox,🎮 游戏服务
+# - RULE-SET,proxy,🪜 代理域名
+# - RULE-SET,cnip,🇨🇳 直连 IP,no-resolve
 # - MATCH,🐟 漏网之鱼
