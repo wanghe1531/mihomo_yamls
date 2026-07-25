@@ -1,6 +1,6 @@
 # OpenClash 覆写模块 - Clashmi.yaml
-# 生成日期：2026-07-21
-# 源文件：https://raw.githubusercontent.com/HenryChiao/MIHOMO_YAMLS/main/THEYAMLS/General_Config/bgpeer/Clashmi.yaml
+# 生成日期：2026-07-25
+# 源文件：https://raw.githubusercontent.com/wanghe1531/mihomo_yamls/main/THEYAMLS/General_Config/bgpeer/Clashmi.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
 # 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
@@ -418,17 +418,17 @@
 #
 # rule-providers:
 #   Alibaba:
-#     behavior: classical
-#     format: yaml
-#     interval: 86400
-#     type: http
-#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/alibaba.yaml
-#   Apple:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/apple.mrs
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/alibaba.mrs
+#   Apple:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/apple.yaml
 #   Claude-zj:
 #     behavior: classical
 #     format: yaml
@@ -454,11 +454,11 @@
 #     type: http
 #     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/github.mrs
 #   Google-zj:
-#     behavior: classical
-#     format: yaml
+#     behavior: domain
+#     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/google.yaml
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/google.mrs
 #   Microsoft:
 #     behavior: domain
 #     format: mrs
@@ -490,17 +490,17 @@
 #     type: http
 #     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/telegram.yaml
 #   Tencent:
-#     behavior: classical
-#     format: yaml
+#     behavior: domain
+#     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/tencent.yaml
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/tencent.mrs
 #   TikTok-zj:
-#     behavior: classical
-#     format: yaml
+#     behavior: domain
+#     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/tiktok.yaml
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/tiktok.mrs
 #   bilibili:
 #     behavior: domain
 #     format: mrs
@@ -532,11 +532,11 @@
 #     type: http
 #     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geoip/cn.mrs
 #   douyin-zj:
-#     behavior: classical
-#     format: yaml
+#     behavior: domain
+#     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/bytedance.yaml
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/rules/main/geo/geosite/bytedance.mrs
 #   fastly-ip:
 #     behavior: ipcidr
 #     format: mrs
