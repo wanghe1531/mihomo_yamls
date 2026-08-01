@@ -74,32 +74,33 @@ dns:
   use-system-hosts: true
   cache-algorithm: arc
   default-nameserver:
-    - https://223.5.5.5/dns-query
-    - https://119.29.29.29/dns-query
+    - 223.5.5.5
+    - 120.53.53.53
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.0/15
   fake-ip-range6: fc00::/18
-  fake-ip-ttl: 30
+  fake-ip-ttl: 10
   fake-ip-filter-mode: rule
   fake-ip-filter:
     - DOMAIN,localhost,real-ip
     - DOMAIN-SUFFIX,lan,real-ip
     - DOMAIN-SUFFIX,local,real-ip
     - RULE-SET,private,real-ip
+    - RULE-SET,googlefcm,real-ip
     - RULE-SET,cn,real-ip
     - MATCH,fake-ip
   nameserver-policy:
-    "+.arpa": "10.0.0.1"
+    "rule-set:httpdns,ads,AWAvenue": "rcode://success"
   nameserver:
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
   direct-nameserver-follow-policy: false
   direct-nameserver:
     - https://223.5.5.5/dns-query
-    - https://1.12.12.12/dns-query
+    - https://119.29.29.29/dns-query
   proxy-server-nameserver:
     - https://223.6.6.6/dns-query
-    - https://120.53.53.53/dns-query
+    - https://1.12.12.12/dns-query
 
 proxies:
 
@@ -107,7 +108,7 @@ proxies:
   - {name: 🇨🇳 直连, type: direct, udp: true}
   
 # 锚点
-p: &p {type: http, interval: 86400, proxy: "SubUpdate", exclude-filter: "(?i)Russia", exclude-type: "http|ss", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 3600, timeout: 3000}}
+p: &p {type: http, interval: 86400, proxy: "SubUpdate", exclude-filter: "(?i)Russia", exclude-type: "http|ss", health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 1800, timeout: 3000, lazy: true}}
 pr: &pr {type: select, proxies: [香港-自动选择, 香港-故障转移, 香港-负载均衡, 香港-手动选择, 台湾-自动选择, 台湾-故障转移, 台湾-负载均衡, 台湾-手动选择, 日本-自动选择, 日本-故障转移, 日本-负载均衡, 日本-手动选择, 韩国-自动选择, 韩国-故障转移, 韩国-负载均衡, 韩国-手动选择, 新加坡-自动选择, 新加坡-故障转移, 新加坡-负载均衡, 新加坡-手动选择, 英国-自动选择, 英国-故障转移, 英国-负载均衡, 英国-手动选择, 美国-自动选择, 美国-故障转移, 美国-负载均衡, 美国-手动选择, 其他-自动选择, 其他-故障转移, 其他-负载均衡, 其他-手动选择, 全部-自动选择, 全部-故障转移, 全部-负载均衡, 全部-手动选择, 神秘大国, Block]}
 check: &check {url: "https://www.gstatic.com/generate_204", interval: 1800, timeout: 3000, lazy: true, max-failed-times: 3, hidden: true}
 smux: &smux {udp: true, client-fingerprint: chrome, tfo: true, smux: {enabled: true, protocol: h2mux, max-connections: 9, min-streams: 5, max-streams: 9, statistic: false, only-tcp: false, padding: true}}
