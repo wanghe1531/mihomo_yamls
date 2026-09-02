@@ -19,7 +19,7 @@
 ## 📄 配置详情
 
 #### 📝 base-clash-ruleset.yaml
-- **路径**: `base-clash-ruleset.yaml` | **大小**: 15.8 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/base-clash-ruleset.yaml)
+- **路径**: `base-clash-ruleset.yaml` | **大小**: 15.8 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Pililink/base-clash-ruleset.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (27个)</summary>
@@ -50,7 +50,7 @@
 </details>
 
 #### 📝 3-subscription-clash-rule-set.yaml
-- **路径**: `3-subscription-clash-rule-set.yaml` | **大小**: 18.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/3-subscription-clash-rule-set.yaml)
+- **路径**: `3-subscription-clash-rule-set.yaml` | **大小**: 18.6 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Pililink/3-subscription-clash-rule-set.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (39个)</summary>
@@ -81,7 +81,7 @@
 </details>
 
 #### 📝 2-subscription-clash-rule-set.yaml
-- **路径**: `2-subscription-clash-rule-set.yaml` | **大小**: 18.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/2-subscription-clash-rule-set.yaml)
+- **路径**: `2-subscription-clash-rule-set.yaml` | **大小**: 18.0 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Pililink/2-subscription-clash-rule-set.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (38个)</summary>
