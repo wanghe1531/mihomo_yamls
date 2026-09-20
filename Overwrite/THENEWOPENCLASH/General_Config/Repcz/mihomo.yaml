@@ -1,6 +1,6 @@
-# OpenClash 覆写模块 - geox_config.yaml
+# OpenClash 覆写模块 - mihomo.yaml
 # 生成日期：2026-09-20
-# 源文件：https://raw.githubusercontent.com/wanghe1531/mihomo_yamls/main/THEYAMLS/Official_Examples/Metacubex/geox_config.yaml
+# 源文件：https://raw.githubusercontent.com/wanghe1531/mihomo_yamls/main/THEYAMLS/General_Config/Repcz/mihomo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
 # 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
@@ -83,26 +83,15 @@
 # ==========================================================
 #
 # proxy-providers:
-#   provider1:
+#   Sub:
 #     health-check:
 #       enable: true
-#       interval: 300
-#       url: https://www.gstatic.com/generate_204
+#       interval: 1800
+#       timeout: 5000
+#       url: http://1.1.1.1/generate_204
 #     interval: 86400
-#     override:
-#       additional-prefix: '[provider1]'
 #     type: http
-#     url: ''
-#   provider2:
-#     health-check:
-#       enable: true
-#       interval: 300
-#       url: https://www.gstatic.com/generate_204
-#     interval: 86400
-#     override:
-#       additional-prefix: '[provider2]'
-#     type: http
-#     url: ''
+#     url: http://your-service-provider
 
 # ==========================================================
 # proxy-groups（从源文件直接提取）
@@ -113,200 +102,111 @@
 # ==========================================================
 #
 # proxy-groups:
-# - name: 默认
+# - icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png
+#   name: Proxy
 #   proxies:
-#   - 自动选择
-#   - 直连
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
+#   - Fallback
 #   type: select
-# - name: Google
+#   use:
+#   - Sub
+# - icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+#   name: AI
 #   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
+#   - Proxy
+#   - Fallback
 #   type: select
-# - name: Telegram
+#   use:
+#   - Sub
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+#   name: Telegram
 #   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
+#   - Proxy
+#   - Fallback
 #   type: select
-# - name: Twitter
+#   use:
+#   - Sub
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
+#   name: Fallback
+#   type: fallback
+#   use:
+#   - Sub
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+#   name: Final
 #   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
+#   - Proxy
+#   - Fallback
 #   type: select
-# - name: 哔哩哔哩
-#   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
-#   type: select
-# - name: 巴哈姆特
-#   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
-#   type: select
-# - name: YouTube
-#   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
-#   type: select
-# - name: NETFLIX
-#   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
-#   type: select
-# - name: Spotify
-#   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
-#   type: select
-# - name: Github
-#   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
-#   type: select
-# - name: 国内
-#   proxies:
-#   - 直连
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   type: select
-# - name: 其他
-#   proxies:
-#   - 默认
-#   - 香港
-#   - 台湾
-#   - 日本
-#   - 新加坡
-#   - 美国
-#   - 其它地区
-#   - 全部节点
-#   - 自动选择
-#   - 直连
-#   type: select
-# - exclude-type: direct
-#   filter: (?i)港|hk|hongkong|hong kong
-#   include-all: true
-#   name: 香港
-#   type: select
-# - exclude-type: direct
-#   filter: (?i)台|tw|taiwan
-#   include-all: true
-#   name: 台湾
-#   type: select
-# - exclude-type: direct
-#   filter: (?i)日|jp|japan
-#   include-all: true
-#   name: 日本
-#   type: select
-# - exclude-type: direct
-#   filter: (?i)美|us|unitedstates|united states
-#   include-all: true
-#   name: 美国
-#   type: select
-# - exclude-type: direct
-#   filter: (?i)(新|sg|singapore)
-#   include-all: true
-#   name: 新加坡
-#   type: select
-# - exclude-type: direct
-#   filter: (?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates)).*
-#   include-all: true
-#   name: 其它地区
-#   type: select
-# - exclude-type: direct
-#   include-all: true
-#   name: 全部节点
-#   type: select
-# - exclude-type: direct
-#   include-all: true
-#   name: 自动选择
-#   tolerance: 10
-#   type: url-test
+#   use:
+#   - Sub
+
+# ==========================================================
+# rule-providers（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始规则集配置，默认注释不启用。
+# 如需追加新的 rule-provider，参考上方示例一使用 +rule-providers: 操作符。
+# ==========================================================
+#
+# rule-providers:
+#   AI:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AI.list
+#   Direct:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Direct.list
+#   Github:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Github.list
+#   Google:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Google.list
+#   Lan:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Lan.list
+#   Microsoft:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Microsoft.list
+#   Proxy:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Proxy.list
+#   Reject:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Reject.list
+#   Telegram:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Telegram.list
+#   Twitter:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Twitter.list
 
 # ==========================================================
 # rules（从源文件直接提取）
@@ -320,24 +220,18 @@
 # ==========================================================
 #
 # rules:
-# - GEOIP,lan,直连,no-resolve
-# - GEOSITE,github,Github
-# - GEOSITE,twitter,Twitter
-# - GEOSITE,youtube,YouTube
-# - GEOSITE,google,Google
-# - GEOSITE,telegram,Telegram
-# - GEOSITE,netflix,NETFLIX
-# - GEOSITE,bilibili,哔哩哔哩
-# - GEOSITE,bahamut,巴哈姆特
-# - GEOSITE,spotify,Spotify
-# - GEOSITE,CN,国内
-# - GEOSITE,geolocation-!cn,其他
-# - GEOIP,google,Google
-# - GEOIP,netflix,NETFLIX
-# - GEOIP,telegram,Telegram
-# - GEOIP,twitter,Twitter
-# - GEOIP,CN,国内
-# - MATCH,其他
+# - RULE-SET,Direct,DIRECT
+# - RULE-SET,Reject,REJECT
+# - RULE-SET,AI,AI
+# - RULE-SET,Telegram,Telegram
+# - RULE-SET,Twitter,Fallback
+# - RULE-SET,Google,Fallback
+# - RULE-SET,Github,Fallback
+# - RULE-SET,Microsoft,Fallback
+# - RULE-SET,Proxy,Proxy
+# - RULE-SET,Lan,DIRECT
+# - GEOIP,CN,DIRECT
+# - MATCH,Final
 
 # ==========================================================
 # dns（从源文件直接提取）
@@ -349,16 +243,27 @@
 #
 # dns:
 #   default-nameserver:
-#   - tls://223.5.5.5
-#   - tls://223.6.6.6
+#   - 223.5.5.5
+#   - 119.29.29.29
 #   enable: true
 #   enhanced-mode: fake-ip
 #   fake-ip-filter:
-#   - '*'
 #   - +.lan
+#   - '*'
 #   - +.local
-#   - +.market.xiaomi.com
-#   ipv6: true
+#   - +.cmpassport.com
+#   - id6.me
+#   - open.e.189.cn
+#   - mdn.open.wo.cn
+#   - opencloud.wostore.cn
+#   - auth.wosms.cn
+#   - +.10099.com.cn
+#   - +.msftconnecttest.com
+#   - +.msftncsi.com
+#   - lancache.steamcontent.com
+#   fake-ip-range: 198.18.0.1/16
+#   ipv6: false
+#   listen: :1053
 #   nameserver:
 #   - https://doh.pub/dns-query
 #   - https://dns.alidns.com/dns-query
