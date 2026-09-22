@@ -19,7 +19,7 @@
 ## 📄 配置详情
 
 #### 📝 mihomo.yaml
-- **路径**: `mihomo.yaml` | **大小**: 3.1 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/mihomo.yaml)
+- **路径**: `mihomo.yaml` | **大小**: 3.1 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Repcz/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (5个)</summary>
@@ -34,7 +34,7 @@
 </details>
 
 #### 📝 config.yaml
-- **路径**: `config.yaml` | **大小**: 8.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/config.yaml)
+- **路径**: `config.yaml` | **大小**: 8.0 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Repcz/config.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (17个)</summary>
@@ -61,7 +61,7 @@
 </details>
 
 #### 📝 config_lite.yaml
-- **路径**: `config_lite.yaml` | **大小**: 2.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/config_lite.yaml)
+- **路径**: `config_lite.yaml` | **大小**: 2.9 KB | [查看源码](https://github.com/wanghe1531/mihomo_yamls/blob/main/THEYAMLS/General_Config/Repcz/config_lite.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (1个)</summary>
